@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu_mobile</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-blue: #00609C;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .mobile-menu {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        /* margin-bottom: 24px; */
+        }
+        .mobile-menu ul {
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+        }
+        .mobile-menu ul:nth-child(1) {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobile-menu ul li {
+            margin-bottom: 24px;
+        }
+        .email {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+        .sign-out {
+            font-size: var(--sm);
+            color: var(--hospital-blue);
+        }
+        .email {
+            font-weight: 300 !important;
+        }
+        .sign-out {
+            color: var(--hospital-blue) !important;
+        }
+        .mobile-menu .menu-email {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+        .mobile-menu .menu-signout {
+            font-size: var(--sm);
+            color: var(--hospital-blue);
+        }
+        .mobile-menu ul:nth-child(3){
+            margin-bottom: 50px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <ul>
+            <li>
+              <a href="/">CATEGORIAS</a>
+            </li>
+            <li>
+              <a href="/">Formulario</a>
+            </li>
+            <li>
+              <a href="/">Reactivos</a>
+            </li>
+            <li>
+              <a href="/">Materiales</a>
+            </li>
+            <li>
+              <a href="/">Equipos</a>
+            </li>
+            <li>
+              <a href="/">Laboratorios</a>
+            </li>
+            <li>
+              <a href="/">Otro</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="/">Mis Practicas</a>
+            </li>
+            <li>
+              <a href="/">Mi cuenta</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="/" class="email">platzi@example.com</a>
+            </li>
+            <li>
+              <a href="/" class="sign-out">Cerrar sesión</a>
+            </li>
+          </ul>
+      </div>
+</body>
+</html>
