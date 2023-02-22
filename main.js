@@ -3,19 +3,19 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const menuCarritoIcone = document.querySelector('.navbar-shopping-cart');
 const menuHamIcone = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const aside  = document.querySelector('.product-detail');
+const shoppingCartContainer  = document.querySelector('#shoppingCartContainer');
 const cardsContainer = document.querySelector('.cards-container');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcone.addEventListener('click',toggleMobileMenu);
 menuCarritoIcone.addEventListener('click',toggleCarritoAside);
 
-/*Función que cuando se abra desktopmenu se cierre aside que es carrito con productos selecionados*/
+/*Función que cuando se abra desktopmenu se cierre shoppingCartContainer que es carrito con productos selecionados*/
 function toggleDesktopMenu() {
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
   
     if (!isAsideClosed) {
-      aside.classList.add('inactive');
+        shoppingCartContainer.classList.add('inactive');
     }
     
     desktopMenu.classList.toggle('inactive');
@@ -28,19 +28,19 @@ function toggleDesktopMenu() {
       desktopMenu.classList.add('inactive'); 
     }
     
-    aside.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
   }
-  /*Función que cuando se abra mobilemenu se cierre aside que es carrito con productos selecionados*/
+  /*Función que cuando se abra mobilemenu se cierre shoppingCartContainer que es carrito con productos selecionados*/
   function toggleMobileMenu() {
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
   
     if (!isAsideClosed) {
-      aside.classList.add('inactive'); 
+        shoppingCartContainer.classList.add('inactive'); 
     }
     
     mobileMenu.classList.toggle('inactive');
   }
-  /*Función que cuando se abra aside que es carrito con productos selecionados se cierre mobilemenu */
+  /*Función que cuando se abra shoppingCartContainer que es carrito con productos selecionados se cierre mobilemenu */
   function toggleCarritoAside() {
     const isDesktopMenuClose = desktopMenu.classList.contains('inactive');
     
@@ -48,7 +48,7 @@ function toggleDesktopMenu() {
       desktopMenu.classList.add('inactive'); 
     }
     
-    aside.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
   }
   const productList = [];
         productList.push({
