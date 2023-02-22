@@ -4,26 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 
-    <!-- Variables de color y diseño de letra -->
-    <style>
-        :root{
-            --white: #FFFFFF;
-            --black: #000000;
-            --dark: #232830;
-            --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
-            --hospital-blue: #00609C;
-        }
-        body {
-            font-family: 'Quicksand', sans-serif;
-        }
-    </style>
+    <title>Laboratorio Química</title> 
 </head>
 <body>
+    <nav>
+        <img src="https://static.platzi.com/media/tmp/class-files/github/curso-frontend-developer-practico/curso-frontend-developer-practico-main/icons/icon_menu.svg" alt="menu" class="menu">
     
+        <div class="navbar-left">
+          <img src="./Imagenes/logo.png" alt="logo" class="logo">
+    
+          <ul>
+            <li>
+              <a href="/">Formulario</a>
+            </li>
+            <li>
+              <a href="/">Reactivos</a>
+            </li>
+            <li>
+              <a href="/">Materiales</a>
+            </li>
+            <li>
+              <a href="/">Equipos</a>
+            </li>
+            <li>
+              <a href="/">Laboratorios</a>
+            </li>
+            <li>
+              <a href="/">Otros</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="navbar-right">
+          <ul>
+            <li class="navbar-email">upn@example.com
+                <img src="https://static.platzi.com/media/tmp/class-files/github/curso-frontend-developer-practico/curso-frontend-developer-practico-main/icons/flechita.svg" alt="carrito" >
+            <li class="navbar-shopping-cart">
+                <img src="./Imagenes/icono-anadir-al-carrito.png" alt="shopping cart" class="carro">
+              <div>2</div>
+            </li>   
+            </li>
+          </ul> 
+        </div>
+
+        <div class="desktop-menu inactive">
+            <ul>
+              <li>
+                <a href="/" class="title">Mis Practicas</a>
+              </li>
+        
+              <li>
+                <a href="/">Mi cuenta</a>
+              </li>
+        
+              <li>
+                <a href="/">Cerrar sesión</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <script src="./main.js"></script>
 </body>
 </html>
