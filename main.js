@@ -68,19 +68,19 @@ function toggleDesktopMenu() {
   }
   const productList = [];
         productList.push({
-        name: 'Bike',
+        name: 'Ácido acético',
         price: 120,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        image: 'https://quimicosalbor.com/wp-content/uploads/2017/05/acido-acetico-3.jpg',
         });
         productList.push({
-        name: 'Pantalla',
+        name: 'Erlenmeyer',
         price: 220,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        image: 'http://www.tplaboratorioquimico.com/wp-content/uploads/2014/12/matraz_erlen_meyer.jpg',
         });
         productList.push({
-        name: 'Compu',
+        name: 'PH-metro',
         price: 620,
-        image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        image: 'https://quimicariocuarto.com.ar/wp-content/uploads/2017/06/ftb8dxzabafc8qbayzl338c897we2ed8.jpg',
         });
 
 function renderProducts(arr) {
